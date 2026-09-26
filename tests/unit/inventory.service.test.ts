@@ -64,7 +64,7 @@ describe("InventoryService", () => {
     // Act
     const product = await service.registerProduct({
       sku: "PROD-001",
-      name: "Mouse",
+      name: "Headset",
       stock: 10,
     });
 
@@ -72,7 +72,7 @@ describe("InventoryService", () => {
     expect(product).toMatchObject({
       id: 1,
       sku: "PROD-001",
-      name: "Mouse",
+      name: "Headset",
       stock: 10,
     });
   });
@@ -84,7 +84,7 @@ describe("InventoryService", () => {
     // Act
     const product = await service.registerProduct({
       sku: "PROD-001",
-      name: "Mouse",
+      name: "Headset",
       stock: 0,
     });
 
@@ -99,7 +99,7 @@ describe("InventoryService", () => {
     // Act
     const result = service.registerProduct({
       sku: "PROD-001",
-      name: "Mouse",
+      name: "Headset",
       stock: -1,
     });
 
@@ -117,7 +117,7 @@ describe("InventoryService", () => {
     // Act
     const result = service.registerProduct({
       sku: "   ",
-      name: "Mouse",
+      name: "Headset",
       stock: 10,
     });
 
@@ -131,7 +131,7 @@ describe("InventoryService", () => {
     const service = createService();
     await service.registerProduct({
       sku: "PROD-001",
-      name: "Mouse",
+      name: "Headset",
       stock: 10,
     });
 
@@ -147,7 +147,7 @@ describe("InventoryService", () => {
     const service = createService();
     await service.registerProduct({
       sku: "PROD-001",
-      name: "Mouse",
+      name: "Headset",
       stock: 10,
     });
 
@@ -163,7 +163,7 @@ describe("InventoryService", () => {
     const service = createService();
     await service.registerProduct({
       sku: "PROD-001",
-      name: "Mouse",
+      name: "Headset",
       stock: 10,
     });
 
@@ -180,7 +180,7 @@ describe("InventoryService", () => {
     const service = createService();
     await service.registerProduct({
       sku: "PROD-001",
-      name: "Mouse",
+      name: "Headset",
       stock: 10,
     });
 
